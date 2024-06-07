@@ -1,0 +1,9 @@
+URL_BASE = "https://stellarburgers.nomoreparties.site/"
+URL_LOGIN = f'{URL_BASE}login'
+URL_FORGOT_PASSWORD = f'{URL_BASE}forgot-password'
+URL_RESET_PASSWORD = f'{URL_BASE}reset-password'
+URL_PROFILE = f'{URL_BASE}account/profile'
+URL_HISTORY = f'{URL_BASE}account/order-history'
+URL_ORDER_LIST = f'{URL_BASE}feed'
+URL_CREATE_USER = f'{URL_BASE}api/auth/register'
+URL_LOGIN_USER = f'{URL_BASE}api/auth/login'
