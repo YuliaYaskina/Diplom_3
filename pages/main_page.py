@@ -12,7 +12,7 @@ class MainPage(BasePage):
     def create_order(self):
         self.drag_and_drop_ingredient(self.driver)
         create_order = self.wait_element_to_be_clickable(Locators.create_order)
-        self.driver.execute_script("arguments[0].click();", create_order)
+        self.click_the_element(create_order)
 
     def order_number_is_present(self):
         result = self.element_is_present(Locators.new_order_number)
@@ -20,7 +20,7 @@ class MainPage(BasePage):
 
     def click_lk_button(self):
         lk_button = self.wait_element_to_be_clickable(Locators.lk_button)
-        self.driver.execute_script("arguments[0].click();", lk_button)
+        self.click_the_element(lk_button)
 
     def save_button_is_present(self):
         result = self.element_is_present(Locators_lk.save_button)
@@ -40,24 +40,24 @@ class MainPage(BasePage):
 
     def click_order_list_button(self):
         order_list_button = self.wait_element_to_be_clickable(Locators.order_list)
-        self.driver.execute_script("arguments[0].click();", order_list_button)
+        self.click_the_element(order_list_button)
 
     def click_constructor_button(self):
         order_list_button = self.wait_element_to_be_clickable(Locators.order_list)
-        self.driver.execute_script("arguments[0].click();", order_list_button)
+        self.click_the_element(order_list_button)
         constructor_button = self.wait_element_to_be_clickable(Locators.constructor)
-        self.driver.execute_script("arguments[0].click();", constructor_button)
+        self.click_the_element(constructor_button)
         self.wait_element_to_be_clickable(Locators.enter_account)
 
     def click_ingredient_button(self):
         first_ingr = self.wait_element_to_be_clickable(Locators.first_igredient)
-        self.driver.execute_script("arguments[0].click();", first_ingr)
+        self.click_the_element(first_ingr)
 
     def close_pop_up_with_ingredient(self):
         first_ingr = self.find_element_with_wait(Locators.first_igredient)
-        self.driver.execute_script("arguments[0].click();", first_ingr)
+        self.click_the_element(first_ingr)
         close_button = self.wait_element_to_be_clickable(Locators.close_ingredient_pop_up)
-        self.driver.execute_script("arguments[0].click();", close_button)
+        self.click_the_element(close_button)
 
     def drag_and_drop_ingredient(self, driver):
         source_element = self.find_element_with_wait(Locators.first_igredient)
@@ -87,4 +87,4 @@ class MainPage(BasePage):
 
     def go_to_constructor(self):
         constructor = self.wait_element_to_be_clickable(Locators.constructor)
-        self.driver.execute_script("arguments[0].click();", constructor)
+        self.click_the_element(constructor)

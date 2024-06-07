@@ -1,2 +1,0 @@
-Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjAzZDQ0OWVkMjgwMDAxYjQyYThmYSIsImlhdCI6MTcxNzU4MzE3MiwiZXhwIjoxNzE3NTg0MzcyfQ.ofc41lm5-ObCgicHe4YsY6_m8gAscp_yVA9CnFFrqZU
-<Response [200]>

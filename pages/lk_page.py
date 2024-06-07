@@ -11,14 +11,14 @@ class LkPage(BasePage):
 
     def go_to_history(self):
         lk_button = self.wait_element_to_be_clickable(Locators_main.lk_button)
-        self.driver.execute_script("arguments[0].click();", lk_button)
+        self.click_the_element(lk_button)
         history = self.wait_element_to_be_clickable(Locators_lk.history)
-        self.driver.execute_script("arguments[0].click();", history)
+        self.click_the_element(history)
         self.get_current_url()
 
     def logout(self):
         lk_button = self.wait_element_to_be_clickable(Locators_main.lk_button)
-        self.driver.execute_script("arguments[0].click();", lk_button)
+        self.click_the_element(lk_button)
         login = self.wait_element_to_be_clickable(Locators_lk.logout)
-        self.driver.execute_script("arguments[0].click();", login)
+        self.click_the_element(login)
         self.wait_element_to_be_clickable(Locators_login.enter_button_login)

@@ -15,11 +15,11 @@ class OrderListPage(BasePage):
     def click_last_order(self, driver):
         self.drag_and_drop_ingredient(driver)
         create_order = self.wait_element_to_be_clickable(Locators_main.create_order)
-        self.driver.execute_script("arguments[0].click();", create_order)
+        self.click_the_element(create_order)
         order_list = self.wait_element_to_be_clickable(Locators_main.order_list)
-        self.driver.execute_script("arguments[0].click();", order_list)
+        self.click_the_element(order_list)
         last_order = self.wait_element_to_be_clickable(Locators_orders.last_order_number_locator)
-        self.driver.execute_script("arguments[0].click();", last_order)
+        self.click_the_element(last_order)
 
     def order_details_pop_up_is_present(self):
         result = self.element_is_present(Locators_order_list.pop_up_details)

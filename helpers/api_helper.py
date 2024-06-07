@@ -10,8 +10,6 @@ class ApiHelper:
         response = requests.post(urls.URL_CREATE_USER, data=payload)
         access_token = response.json()['accessToken']
         payload["accessToken"] = access_token
-        print(access_token)
-        print(response)
         return payload
 
     @staticmethod

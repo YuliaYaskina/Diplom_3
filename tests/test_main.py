@@ -70,6 +70,6 @@ class TestMain:
         main_page = MainPage(driver)
         main_page.create_order()
         main_page.wait_for_loader_to_be_visible()
-        main_page.wait_for_element_to_be_invisible
+        main_page.wait_for_loader_to_be_invisible()
 
         assert main_page.order_number_is_present() == 'true'

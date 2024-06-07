@@ -1,5 +1,4 @@
 import allure
-
 import urls
 from pages.lk_page import LkPage
 

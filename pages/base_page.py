@@ -47,3 +47,7 @@ class BasePage:
     @allure.step('Ожидаем, когда элемент станет невидимым')
     def wait_for_element_to_be_invisible(self, locator):
         WebDriverWait(self.driver, timeout=10).until(expected_conditions.invisibility_of_element_located(locator))
+
+    @allure.step('Кликаем на элемент')
+    def click_the_element(self, element_to_click):
+        self.driver.execute_script("arguments[0].click();", element_to_click)

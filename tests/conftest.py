@@ -15,7 +15,6 @@ def driver(request):
     elif request.param == 'chrome':
         browser = webdriver.Chrome()
 
-
     browser.get(urls.URL_BASE)
 
     yield browser
